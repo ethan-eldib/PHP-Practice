@@ -1,9 +1,9 @@
 
 // La fonction
-function displayDateTime(): DateTime
+function displayDateTime(): string
 {
-    return new DateTime();
+    return "Nous sommes le ". (new DateTime())->format('d/m/Y') . " et il est " . (new DateTime())->format('H\hi');
 }
 
 // L'affichage
-"Nous sommes le ". displayDateTime()->format('d/m/Y') . " et il est " . displayDateTime()->format('H\hi')
+displayDateTime()
