@@ -100,15 +100,15 @@
             <h5 class="alert alert-secondary alert alert-secondary">E1. Écrire une fonction PHP qui affiche la date et l'heure actuelles.</h5>
             <?php
                 // Votre fonction ici
-                function example(): string
+                function displayDateTime(): string
                 {
-                    return 'Je suis un exemple';
+                    return "Nous sommes le ". (new DateTime())->format('d/m/Y') . " et il est " . (new DateTime())->format('H\hi');
                 }
             ?>
 
             <?php exercice(1, [
                 // votre affichage ici
-                example()
+                displayDateTime()
             ])?>
         </section>
         <section class="mt-5">
