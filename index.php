@@ -107,7 +107,7 @@
             ?>
 
             <?php exercice(1, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
                 example()
             ])?>
         </section>
@@ -121,7 +121,7 @@
             ?>
 
             <?php exercice(2, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -135,7 +135,7 @@
             ?>
 
             <?php exercice(3, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -148,7 +148,7 @@
             ?>
 
             <?php exercice(4, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -161,7 +161,7 @@
             ?>
 
             <?php exercice(5, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -174,7 +174,7 @@
             ?>
 
             <?php exercice(6, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -187,7 +187,7 @@
             ?>
 
             <?php exercice(7, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -200,7 +200,7 @@
             ?>
 
             <?php exercice(8, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -213,7 +213,7 @@
             ?>
 
             <?php exercice(9, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -226,7 +226,7 @@
             ?>
 
             <?php exercice(10, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -239,7 +239,7 @@
             ?>
 
             <?php exercice(11, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -254,7 +254,7 @@
             ?>
 
             <?php exercice(12, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -268,7 +268,7 @@
             ?>
 
             <?php exercice(13, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
         <section class="mt-5">
@@ -283,7 +283,7 @@
             ?>
 
             <?php exercice(14, [
-                // votre affichage ici
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
             ])?>
         </section>
     </main>

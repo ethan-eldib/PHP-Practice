@@ -17,5 +17,5 @@ function averageArray (array $ratings): string
     return "La moyenne est de ". $average . "/20 " ;
 }
 
-// l'affichage
+// Appel de la fonction
 averageArray([10, 20, 5, 12])

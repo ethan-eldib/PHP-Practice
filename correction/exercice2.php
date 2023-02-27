@@ -6,5 +6,5 @@ function strReverse (string $word): string
 }
 ?>
 
-// l'affichage
+// Appel de la fonction
 strReverse('Bonjour')

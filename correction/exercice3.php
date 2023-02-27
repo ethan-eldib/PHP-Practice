@@ -9,5 +9,5 @@ function isPalindrome ($word): string
     }
 }
 
-// L'affichage
+// Appel de la fonction
 isPalindrome("radar")

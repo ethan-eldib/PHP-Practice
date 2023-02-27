@@ -5,6 +5,6 @@ function combineUniqueArrays (array $firstArray, array $secondArray): array
     return array_unique(array_merge($firstArray, $secondArray));
 }
 
-// L'affichage
+// Appel de la fonction
 implode(", ", combineUniqueArrays(['Jane', 'John', 'John'], [10, 10, 25]))
 
