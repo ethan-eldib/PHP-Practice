@@ -5,13 +5,13 @@ const show = function (exerciceNumber)  {
     let iconCircled = document.getElementById(`icon-circled${exerciceNumber}`);
 
     btnExercice.addEventListener('click', () => {
-        if (responseExercice.style.opacity === "0") {
+        if (responseExercice.style.display === "none") {
             if (confirm("Je me demande si tu as fait une petite balade en solitaire sur la toile à la recherche de ta réponse, ou si tu préfères que je sois ton guide personnel dans cet océan de connaissances ?")) {
-                responseExercice.style.opacity = "1";
+                responseExercice.style.display = "block";
                 iconCircled.src = "https://img.icons8.com/material-outlined/512/circled-chevron-up.png";
             }
         } else {
-            responseExercice.style.opacity = "0";
+            responseExercice.style.display = "none";
             iconCircled.src = "https://img.icons8.com/material-outlined/512/circled-chevron-down.png";
         }
     })
