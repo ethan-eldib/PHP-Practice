@@ -1,8 +1,8 @@
 const NUMBER_OF_EXERCICES = 14;
 const show = function (exerciceNumber)  {
-    let btnExercice = document.getElementById(`js-btn-exercice${exerciceNumber}`);
-    let responseExercice = document.getElementById(`js-response-exercice${exerciceNumber}`);
-    let iconCircled = document.getElementById(`icon-circled${exerciceNumber}`);
+    const btnExercice = document.getElementById(`js-btn-exercice${exerciceNumber}`);
+    const responseExercice = document.getElementById(`js-response-exercice${exerciceNumber}`);
+    const iconCircled = document.getElementById(`icon-circled${exerciceNumber}`);
 
     btnExercice.addEventListener('click', () => {
         if (responseExercice.style.display === "none") {
