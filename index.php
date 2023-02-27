@@ -97,72 +97,97 @@
     <main>
         <section>
             <hr>
-            <h5 class="alert alert-secondary alert alert-secondary">E1. Écrire une fonction PHP qui affiche la date et l'heure actuelles.</h5>
             <?php
                 // Votre fonction ici
                 function example(): string
                 {
                     return 'Je suis un exemple';
                 }
-            ?>
 
-            <?php exercice(1, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-                example()
-            ])?>
+                exercice(1,
+                "Écrire une fonction PHP qui affiche la date et l'heure actuelles.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    example()
+                ])
+            ?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary alert alert-secondary">E2. Écrire une fonction
-                    qui prend une chaîne de caractères en entrée et qui renvoie cette chaîne avec les caractères
-                    inversés. Par exemple, si l'entrée est 'Bonjour', la sortie doit être 'ruojnoB'.</h5>
             <?php
-                // Votre fonction ici
-            ?>
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
 
-            <?php exercice(2, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
+            exercice(2,
+                "Écrire une fonction
+                    qui prend une chaîne de caractères en entrée et qui renvoie cette chaîne avec les caractères
+                    inversés. Par exemple, si l'entrée est 'Bonjour', la sortie doit être 'ruojnoB'",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
+            ?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary alert alert-secondary">E3. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(3,
+                "Écrire une fonction
                     qui prend une chaîne de caractères en entrée et qui renvoie true si la chaîne est un palindrome,
                     false sinon. Un palindrome est une chaîne qui peut être lue de gauche à droite ou de droite à gauche
-                    sans changer d'ordre. Par exemple, 'radar' est un palindrome.</h5>
-            <?php
-                // Votre fonction ici
+                    sans changer d'ordre. Par exemple, 'radar' est un palindrome.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(3, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary alert alert-secondary">E4. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(4,
+                "Écrire une fonction
                     qui prend deux tableaux en entrée et qui renvoie un nouveau tableau qui contient tous les éléments
-                    des deux tableaux sans doublons.</h5>
-            <?php
-                // Votre fonction ici
+                    des deux tableaux sans doublons.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(4, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E5. Écrire une fonction
-                    qui prend un tableau d'entiers en entrée et qui renvoie la moyenne de tous les entiers dans le
-                    tableau.</h5>
             <?php
-                // Votre fonction ici
-            ?>
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
 
-            <?php exercice(5, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
+            exercice(5,
+                "Écrire une fonction
+                    qui prend un tableau d'entiers en entrée et qui renvoie la moyenne de tous les entiers dans le
+                    tableau.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
+            ?>
         </section>
         <section class="mt-5">
             <hr>
@@ -170,121 +195,178 @@
                     qui prend un tableau de chaînes de caractères en entrée et qui renvoie le nombre de chaînes qui ont
                     une longueur supérieure à 5 caractères</h5>
             <?php
-                // Votre fonction ici
-            ?>
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
 
-            <?php exercice(6, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
+            exercice(6,
+                "Écrire une fonction
+                    qui prend un tableau de chaînes de caractères en entrée et qui renvoie le nombre de chaînes qui ont
+                    une longueur supérieure à 5 caractères",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
+            ?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E7. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(7,
+                "Écrire une fonction
                     qui prend en entrée un nombre entier et qui renvoie true si ce nombre est un nombre premier, false
-                    sinon. Un nombre premier est un nombre qui n'est divisible que par 1 et lui-même</h5>
-            <?php
-                // Votre fonction ici
+                    sinon. Un nombre premier est un nombre qui n'est divisible que par 1 et lui-même",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(7, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E8. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(8,
+                "Écrire une fonction
                     qui prend un tableau d'entiers en entrée et qui renvoie un nouveau tableau contenant uniquement les
-                    nombres pairs.</h5>
-            <?php
-                // Votre fonction ici
+                    nombres pairs.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(8, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E9. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(9,
+                "Écrire une fonction
                     qui prend une chaîne de caractères en entrée et qui renvoie true si la chaîne est un nombre entier
-                    valide, false sinon. Par exemple, '123' est un nombre entier valide, mais 'abc' ne l'est pas.</h5>
-            <?php
-                // Votre fonction ici
+                    valide, false sinon. Par exemple, '123' est un nombre entier valide, mais 'abc' ne l'est pas",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(9, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E10. Écrire une
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(10,
+                "Écrire une
                     fonction qui prend un tableau de chaînes de caractères en entrée et qui renvoie le nombre total de
-                    caractères dans toutes les chaînes du tableau.</h5>
-            <?php
-                // Votre fonction ici
+                    caractères dans toutes les chaînes du tableau.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(10, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E11. Écrire une
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(11,
+                "Écrire une
                     fonction qui prend un nombre entier en entrée et qui renvoie la somme de tous les nombres impairs de
-                    1 à ce nombre. Par exemple, si l'entrée est 5, la sortie doit être 9 (1 + 3 + 5).</h5>
-            <?php
-                // Votre fonction ici
+                    1 à ce nombre. Par exemple, si l'entrée est 5, la sortie doit être 9 (1 + 3 + 5).",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(11, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E12. Écrire une
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(12,
+                "Écrire une
                     fonction qui prend un tableau d'objets en entrée et qui trie le tableau par ordre croissant en
                     utilisant l'une des propriétés de l'objet comme clé de tri. Par exemple, si le tableau contient des
                     objets avec une propriété 'prix', la fonction doit trier le tableau par ordre croissant des
-                    prix.</h5>
-            <?php
-                // Votre fonction ici
+                    prix.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(12, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E13. Écrire une fonction
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(13,
+                "Écrire une fonction
                     qui prend une chaîne de caractères en entrée et qui renvoie la même chaîne avec toutes les
                     occurrences d'un caractère donné remplacées par un autre caractère. Par exemple, si l'entrée est
-                    'banana' et le caractère à remplacer est 'a', la sortie doit être 'bnnn'.</h5>
-            <?php
-                // Votre fonction ici
+                    'banana' et le caractère à remplacer est 'a', la sortie doit être 'bnnn'.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(13, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
         <section class="mt-5">
             <hr>
-            <h5 class="alert alert-secondary">E14. Écrire une
+            <?php
+            // Votre fonction ici
+            //function example(): string
+            //{
+            //    return 'Je suis un exemple' ;
+            //}
+
+            exercice(14,
+                "Écrire une
                     fonction qui prend un tableau d'objets en entrée et qui renvoie un tableau contenant uniquement les
                     objets qui ont une propriété spécifique avec une valeur donnée. Par exemple, si le tableau contient
                     des objets avec une propriété 'couleur', la fonction doit renvoyer un tableau contenant uniquement
-                    les objets avec une couleur spécifique.</h5>
-            <?php
-                // Votre fonction ici
+                    les objets avec une couleur spécifique.",
+                [
+                    // Appel de votre fonction ici (sans le point-virgule à la fin)
+                    //example()
+                ])
             ?>
-
-            <?php exercice(14, [
-                // Appel de votre fonction ici (sans le point-virgule à la fin)
-            ])?>
         </section>
     </main>
 

@@ -1,8 +1,9 @@
 <?php
     const BUTTON_RESPONSE_VALUE = "Voir la réponse";
-    function exercice (int $exerciceNumber, array $code): void
+    function exercice (int $exerciceNumber, string $statement, array $code): void
     {
         echo "<div id='exercice$exerciceNumber'>";
+        echo "<h5 class=\"alert alert-secondary alert alert-secondary\">E$exerciceNumber. $statement</h5>";
         echo "<br>";
         echo "<p class=\"alert alert-info w-50\">Résultat :";
         echo "<br>";
