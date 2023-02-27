@@ -1,4 +1,4 @@
-const numberOfExercices = 14;
+const NUMBER_OF_EXERCICES = 14;
 const show = function (exerciceNumber)  {
     let btnExercice = document.getElementById(`js-btn-exercice${exerciceNumber}`);
     let responseExercice = document.getElementById(`js-response-exercice${exerciceNumber}`);
@@ -17,6 +17,6 @@ const show = function (exerciceNumber)  {
     })
 }
 
-for (let i=1; i <= 14; ++i) {
+for (let i=1; i <= NUMBER_OF_EXERCICES; ++i) {
     show(i);
 }
