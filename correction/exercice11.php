@@ -7,7 +7,7 @@ function getSumOddNumbersFrom1n (int $number): string
             $oddNumbers[] = $i;
         }
     }
-    return "Calcul de la somme des nombres impairs compris dans le nombre " . $number . " : <br> "
+    return "Calcul de la somme des nombres impairs compris dans le nombre " . $number . " : "
         . implode(" + ", $oddNumbers) . " = " . array_sum($oddNumbers);
 }
 
@@ -17,7 +17,7 @@ function getSumOddNumbersFrom1n(int $number): string
     $oddNumbers = range(1, $number, 2);
     $sumOfOddNumbers = array_sum($oddNumbers);
 
-    return "Calcul de la somme des nombres impairs compris dans le nombre " . $number . " : <br> "
+    return "Calcul de la somme des nombres impairs compris dans le nombre " . $number . " : "
         . implode(" + ", $oddNumbers) . " = " . $sumOfOddNumbers;
 }
 
