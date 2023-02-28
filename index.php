@@ -15,7 +15,6 @@
 <body>
     <div class="container">
         <h1 id="summary" class="h2 text-secondary mb-3">Exercices PHP (facile)</h1>
-
         <div class="row">
             <?php for ($i = 1; $i <= 14; $i++) { ?>
                 <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>
@@ -127,9 +126,6 @@
             </section>
             <section class="mt-5">
                 <hr>
-                <h5 class="alert alert-secondary">E6. Écrire une fonction
-                        qui prend un tableau de chaînes de caractères en entrée et qui renvoie le nombre de chaînes qui ont
-                        une longueur supérieure à 5 caractères</h5>
                 <?php
                 // Votre fonction ici
                 //function example(): string
@@ -306,6 +302,9 @@
             </section>
         </main>
     </div>
+    <a id="backToTop" href="#summary" style="position: fixed; right: 30px; bottom: 25px; opacity: 0" class="btn btn-sm">
+        <img width="50" src="https://img.icons8.com/ios/512/up-squared.png" alt="Icon chevron carré haut ">
+    </a>
 </body>
 <script type="text/javascript" src="assets/index.js"></script>
 </html>
