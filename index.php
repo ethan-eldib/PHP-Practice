@@ -279,10 +279,6 @@
                 <hr>
                 <?php
                 // Votre fonction ici
-                //function example(): string
-                //{
-                //    return 'Je suis un exemple' ;
-                //}
 
                 exercice(14,
                     "Écrire une
@@ -292,7 +288,7 @@
                         les objets avec une couleur spécifique.",
                     [
                         // Appel de votre fonction ici (sans le point-virgule à la fin)
-                        //example()
+                        example()
                     ])
                 ?>
             </section>
