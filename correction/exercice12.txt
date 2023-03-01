@@ -37,20 +37,20 @@ function sortArrayObjectByASC (array $sortingArray, string $property): string
         return  strnatcmp($a->$property, $b->$property);
     });
 
-    $table = "<\table class='table'>
-                <\tr>
-                    <\th>Name<\/th>
-                    <\th>Breed<\/th>
-                    <\th>Price<\/th>
-                <\/tr>";
+    $table = "<table class='table'>
+                <tr>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Price</th>
+                </tr>";
     foreach ($sortingArray as $sorting) {
-        $table .= "<\tr>
-                        <\td> $sorting->name <\/td>
-                        <\td> $sorting->breed <\/td>
-                        <\td> $sorting->price <\/td>
-                    <\/tr>";
+        $table .= "<tr>
+                        <td> $sorting->name </td>
+                        <td> $sorting->breed </td>
+                        <td> $sorting->price </td>
+                    </tr>";
     }
-    $table .= "<\/table>";
+    $table .= "</table>";
 
     return $table . " Trie du tableau par ordre croissant sur la propriété " . $property ;
 }

@@ -37,12 +37,12 @@ function getCarsByColor (array $arrayObjects, string $color): string
     }, []);
 
     if (count($results) > 0) {
-        $table = "<\table class='table'>";
-        $table .= "<\tr><\th>Constructeur<\/th><\th>Modèle<\/th><\th>Couleur<\/th><\/tr>";
+        $table = "<table class='table'>";
+        $table .= "<tr><th>Constructeur</th><th>Modèle</th><th>Couleur</th></tr>";
         foreach ($results as $result) {
-            $table .= sprintf("<\tr><\td>%s<\/td><\td>%s<\/td><\td>%s<\/td><\/tr>", $result->constructor, $result->model, $result->color);
+            $table .= sprintf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>", $result->constructor, $result->model, $result->color);
         }
-        $table .= "<\/table>";
+        $table .= "</table>";
 
         return $table;
     } else {

@@ -17,14 +17,15 @@
         <h1 id="summary" class="h2 text-secondary mb-5 text-center">Exercices PHP (facile)</h1>
         <hr>
         <div class="row">
-            <?php for ($i = 1; $i <= 14; $i++) { ?>
+            <?php const NUMBER_OF_EXERCISES = 15 ?>
+            <?php for ($i = 1; $i <= NUMBER_OF_EXERCISES; $i++) { ?>
                 <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>
                     <div class="col">
                 <?php } ?>
                 <li class="list-group-item">
                     <a href="#exercice<?= $i ?>" class="small link-secondary text-decoration-none">Exercice <?= $i ?></a>
                 </li>
-                <?php if ($i == 4 || $i == 8 || $i == 12 || $i == 14) { ?>
+                <?php if ($i == 4 || $i == 8 || $i == 12 || $i == NUMBER_OF_EXERCISES) { ?>
                     </div>
                 <?php } ?>
             <?php } ?>
@@ -286,6 +287,21 @@
                         objets qui ont une propriété spécifique avec une valeur donnée. Par exemple, si le tableau contient
                         des objets avec une propriété 'couleur', la fonction doit renvoyer un tableau contenant uniquement
                         les objets avec une couleur spécifique.",
+                    [
+                        // Appel de votre fonction ici (sans le point-virgule à la fin)
+                        example()
+                    ])
+                ?>
+            </section>
+            <section class="mt-5">
+                <hr>
+                <?php
+                // Votre fonction ici
+
+                exercice(15,
+                    "Écrire un script PHP 
+                        qui ouvre un fichier texte et affiche son contenu sur la page web. 
+                        Le nom du fichier doit être saisi par l'utilisateur dans un formulaire HTML",
                     [
                         // Appel de votre fonction ici (sans le point-virgule à la fin)
                         example()

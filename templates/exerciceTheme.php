@@ -15,7 +15,7 @@
         echo "</button>";
         echo "<div id=\"js-response-exercice$exerciceNumber\" style=\"display: none\">";
         echo "<pre>";
-        include "correction/exercice$exerciceNumber.php";
+        include "correction/exercice$exerciceNumber.txt";
         echo "</pre>";
         echo "</div>";
         echo "</div>";
