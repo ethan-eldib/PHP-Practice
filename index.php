@@ -14,7 +14,8 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="summary" class="h2 text-secondary mb-3">Exercices PHP (facile)</h1>
+        <h1 id="summary" class="h2 text-secondary mb-5 text-center">Exercices PHP (facile)</h1>
+        <hr>
         <div class="row">
             <?php for ($i = 1; $i <= 14; $i++) { ?>
                 <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>
@@ -28,10 +29,10 @@
                 <?php } ?>
             <?php } ?>
         </div>
+        <hr>
 
-        <main>
+        <main class="mt-5">
             <section>
-                <hr>
                 <?php
                     // Votre fonction ici
                     function example(): string
@@ -263,19 +264,14 @@
                 <hr>
                 <?php
                 // Votre fonction ici
-                //function example(): string
-                //{
-                //    return 'Je suis un exemple' ;
-                //}
 
                 exercice(13,
-                    "Écrire une fonction
-                        qui prend une chaîne de caractères en entrée et qui renvoie la même chaîne avec toutes les
-                        occurrences d'un caractère donné remplacées par un autre caractère. Par exemple, si l'entrée est
-                        'banana' et le caractère à remplacer est 'a', la sortie doit être 'bnnn'.",
+                    "Écrire une fonction 
+                    qui prend une phrase en entrée et remplace toutes les occurrences d'un certain caractère par un autre caractère. 
+                    Par exemple, si on veut remplacer tous les 'a' par des 'b' dans la phrase \"banana\", la fonction doit renvoyer \"bbnbnb\"",
                     [
                         // Appel de votre fonction ici (sans le point-virgule à la fin)
-                        //example()
+                        example()
                     ])
                 ?>
             </section>
