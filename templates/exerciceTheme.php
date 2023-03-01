@@ -1,24 +1,44 @@
 <?php
-    const BUTTON_RESPONSE_VALUE = "Voir la réponse";
-    function exercice (int $exerciceNumber, string $statement, array $code): void
-    {
-        echo "<div class='mx-auto w-50' id='exercice$exerciceNumber'>";
-        echo "<h5 class=\"alert alert-secondary alert alert-secondary\">E$exerciceNumber. $statement</h5>";
-        echo "<br>";
-        echo "<p class=\"alert alert-secondary\">Résultat :";
-        echo "<br>";
-        echo $code[0] ?? null;
-        echo "<p>";
-        echo "<button id=\"js-btn-exercice$exerciceNumber\" class=\"btn btn-sm mb-3\">";
-        echo "<img id=\"icon-circled$exerciceNumber\" width=\"15\" style=\"margin-right:12px\" src=\"https://img.icons8.com/material-outlined/512/circled-chevron-down.png\" />";
-        echo BUTTON_RESPONSE_VALUE;
-        echo "</button>";
-        echo "<div id=\"js-response-exercice$exerciceNumber\" style=\"display: none\">";
-        echo "<pre>";
-        include "correction/exercice$exerciceNumber.txt";
-        echo "</pre>";
-        echo "</div>";
-        echo "</div>";
+const INVALID_ARGUMENT_MESSAGE = "Merci de bien vouloir saisir un chiffre valide pour l'exercice";
+const EXERCISE_NOT_EMPTY_MESSAGE = "La consigne de l'exercice ne doit pas être vide ou null.";
+
+/**
+ * Affiche le code de l'exercice avec un bouton pour afficher la réponse.
+ *
+ * @param int $exerciceNumber Le numéro de l'exercice.
+ * @param string $statement La consigne de l'exercice.
+ * @param string $code Le code de l'exercice à afficher sur la page web.
+ * @throws InvalidArgumentException Si $exerciceNumber n'est pas un chiffre valide.
+ */
+function exercice(int $exerciceNumber, string $statement, string $code): void
+{
+    if (!is_numeric($exerciceNumber)) {
+        throw new InvalidArgumentException(INVALID_ARGUMENT_MESSAGE);
     }
+
+    if (empty(trim($statement))) {
+        throw new InvalidArgumentException(EXERCISE_NOT_EMPTY_MESSAGE);
+    }
+
+    $html = '<div class="mx-auto w-50" id="exercice' . $exerciceNumber . '">
+                    <h5 class="alert alert-secondary alert alert-secondary">E' . $exerciceNumber . '. ' . $statement . '</h5>
+                    <br>
+                    <p class="alert alert-secondary">Résultat :
+                        <br>
+                        ' . $code . '
+                    <p>
+                        <button id="js-btn-exercice' . $exerciceNumber . '" class="btn btn-sm mb-3">
+                            <img id="icon-circled' . $exerciceNumber . '" width="15" style="margin-right:12px"
+                                 src="https://img.icons8.com/material-outlined/512/circled-chevron-down.png"/>
+                            Voir la réponse
+                        </button>
+                    <div id="js-response-exercice' . $exerciceNumber . '" style="display: none">
+                        <img style="transform: translateX(-135px)" width="800" src="/correction/exercice' . $exerciceNumber . '.png"
+                             alt="Correction exercice ' . $exerciceNumber . '"/>
+                    </div>
+                </div>';
+
+    echo $html;
+}
 
 

@@ -1,4 +1,4 @@
-const NUMBER_OF_EXERCICES = 14;
+const NUMBER_OF_EXERCICES = 15;
 const show = function (exerciceNumber)  {
     const btnExercice = document.getElementById(`js-btn-exercice${exerciceNumber}`);
     const responseExercice = document.getElementById(`js-response-exercice${exerciceNumber}`);
@@ -6,7 +6,7 @@ const show = function (exerciceNumber)  {
 
     btnExercice.addEventListener('click', () => {
         if (responseExercice.style.display === "none") {
-            if (confirm("Je me demande si tu as fait une petite balade en solitaire sur la toile à la recherche de ta réponse, ou si tu préfères que je sois ton guide personnel dans cet océan de connaissances ?")) {
+            if (confirm("Tu confirmes que tu veux voir la réponse ?")) {
                 responseExercice.style.display = "block";
                 iconCircled.src = "https://img.icons8.com/material-outlined/512/circled-chevron-up.png";
             }
