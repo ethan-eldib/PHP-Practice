@@ -1,4 +1,10 @@
-<?php include 'templates/exerciceTheme.php' ?>
+<?php
+    include 'template/exerciceTheme.php';
+    function example(): string
+    {
+        return "<small>Ce message provient de la fonction example() située à la ligne " . ( __LINE__ - 2) . " du fichier ". $_SERVER['PHP_SELF'] ."</small>";
+    }
+?>
 
 <!doctype html>
 <html lang="fr">
@@ -8,7 +14,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <title>Exercices PHP (facile)</title>
 
 </head>
@@ -17,7 +23,7 @@
     <h1 id="summary" class="h2 text-secondary mb-5 text-center">Exercices PHP (facile)</h1>
     <hr>
     <div class="row">
-        <?php const NUMBER_OF_EXERCISES = 15 ?>
+        <?php const NUMBER_OF_EXERCISES = 16 ?>
         <?php for ($i = 1; $i <= NUMBER_OF_EXERCISES; $i++) { ?>
             <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>
                 <div class="col">
@@ -36,10 +42,6 @@
         <section>
             <?php
             // Votre fonction ici
-            function example(): string
-            {
-                return 'Je suis un exemple';
-            }
 
             exercice(1,
                 "Écrire une fonction PHP qui affiche la date et l'heure actuelles.",
@@ -243,11 +245,27 @@
             )
             ?>
         </section>
+        <section class="mt-5">
+            <hr>
+            <?php
+            // Votre fonction ici
+
+            exercice(16,
+                "Écrire un script PHP qui crée un fichier, y ajoute des données et les lit :<br>
+                    1. Créez une fonction (par exemple createFile()) qui prendra un argument, le nom du fichier à créer.<br>
+                    2. Créez une deuxième fonction (par exemple readMyFile()) qui prendra un argument, le nom du fichier à lire.<br>
+                    3. Affichez les données lues à l'écran en utilisant.",
+
+                // Appel de votre fonction ici (sans le point-virgule à la fin)
+                example()
+            )
+            ?>
+        </section>
     </main>
 </div>
 <a id="backToTop" href="#summary" style="position: fixed; right: 30px; bottom: 25px; opacity: 0" class="btn btn-sm">
     <img width="50" src="https://img.icons8.com/ios/512/up-squared.png" alt="Icon chevron carré haut ">
 </a>
 </body>
-<script type="text/javascript" src="assets/index.js"></script>
+<script type="module" src="assets/js/index.js"></script>
 </html>
