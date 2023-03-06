@@ -94,9 +94,11 @@ const show = function (exerciceNumber) {
                         console.error('Aucune réponse pour cet exercice')
                 }
                 btnExercice.value = "Masquer la réponse";
+                btnExercice.classList.add('btn-dark');
             } else {
                 responseExercice.innerHTML = "";
                 btnExercice.value = "Voir la réponse ?";
+                btnExercice.classList.remove('btn-dark');
             }
         }
     })

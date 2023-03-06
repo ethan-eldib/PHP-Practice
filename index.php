@@ -22,7 +22,7 @@
 <div class="container">
     <h1 id="summary" class="h2 text-secondary mb-5 text-center">Exercices PHP (facile)</h1>
     <hr>
-    <div class="row">
+    <div class="row text-center">
         <?php const NUMBER_OF_EXERCISES = 16 ?>
         <?php for ($i = 1; $i <= NUMBER_OF_EXERCISES; $i++) { ?>
             <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>

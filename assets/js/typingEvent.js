@@ -15,5 +15,5 @@ export function simulateTyping(element, text) {
          if (i >= text.length) {
              clearInterval(interval);
          }
-     }, 15);
+     }, 8);
  }
