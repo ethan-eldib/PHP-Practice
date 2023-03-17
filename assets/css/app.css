@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.displayBtnExercise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.btnExercise {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btnExercise:nth-child(1) {
+    background-color: #4CAF50;
+}
+
+.btnExercise:nth-child(2) {
+    background-color: darkorange;
+}
+
+.btnExercise:nth-child(3) {
+    background-color: darkred;
+}
+
+.btnExercise a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btnExercise:nth-child(1):hover {
+    background-color: rgba(69, 160, 73, 0.8);
+    transform: scale(1.05);
+}
+
+.btnExercise:nth-child(2):hover {
+    background-color: rgba(255, 140, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.btnExercise:nth-child(3):hover {
+    background-color: rgba(139, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+#backToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    opacity: 0;
+}
