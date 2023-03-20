@@ -6,7 +6,7 @@
     </button>
 
     <button class="btnExercise">
-        <a href="#">Moyen</a>
+        <a href="template/mediumPhpExercise.php">Moyen</a>
     </button>
 
     <button class="btnExercise">

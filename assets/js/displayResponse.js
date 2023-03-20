@@ -1,21 +1,21 @@
 import './scrollEvent.js';
 import {simulateTyping} from "./typingEvent.js";
-import {response1} from "../../correction/exercice1.js";
-import {response2} from "../../correction/exercice2.js";
-import {response3} from "../../correction/exercice3.js";
-import {response4} from "../../correction/exercice4.js";
-import {response5} from "../../correction/exercice5.js";
-import {response6} from "../../correction/exercice6.js";
-import {response7} from "../../correction/exercice7.js";
-import {response8} from "../../correction/exercice8.js";
-import {response9} from "../../correction/exercice9.js";
-import {response10} from "../../correction/exercice10.js";
-import {response11} from "../../correction/exercice11.js";
-import {response12} from "../../correction/exercice12.js";
-import {response13} from "../../correction/exercice13.js";
-import {response14} from "../../correction/exercice14.js";
-import {response15} from "../../correction/exercice15.js";
-import {response16} from "../../correction/exercice16.js";
+import {response1} from "../../correction/easy/exercice1.js";
+import {response2} from "../../correction/easy/exercice2.js";
+import {response3} from "../../correction/easy/exercice3.js";
+import {response4} from "../../correction/easy/exercice4.js";
+import {response5} from "../../correction/easy/exercice5.js";
+import {response6} from "../../correction/easy/exercice6.js";
+import {response7} from "../../correction/easy/exercice7.js";
+import {response8} from "../../correction/easy/exercice8.js";
+import {response9} from "../../correction/easy/exercice9.js";
+import {response10} from "../../correction/easy/exercice10.js";
+import {response11} from "../../correction/easy/exercice11.js";
+import {response12} from "../../correction/easy/exercice12.js";
+import {response13} from "../../correction/easy/exercice13.js";
+import {response14} from "../../correction/easy/exercice14.js";
+import {response15} from "../../correction/easy/exercice15.js";
+import {response16} from "../../correction/easy/exercice16.js";
 
 const NUMBER_OF_EXERCICES = 16;
 

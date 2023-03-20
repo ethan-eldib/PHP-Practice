@@ -15,6 +15,7 @@
 <body>
 
     <h1 id="summary" class="h2 text-secondary text-center">Exercices PHP</h1>
+    <a href="../index.php" class="nav-link">Accueil</a>
     <?php echo $content; ?>
 
     <a id="backToTop" href="#summary" class="btn btn-sm">

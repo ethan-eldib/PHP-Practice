@@ -1,11 +1,13 @@
 <?php
 ob_start();
 include 'exerciceTheme.php';
+require '../Service/GenerateExerciceList.php';
+
 const NUMBER_OF_EXERCISES = 16
 ?>
 
 <h2 class="lead m-5">
-    Je vous propose ci-dessous <?= NUMBER_OF_EXERCISES ?> exercices simples en PHP à essayer.
+    Je vous propose ci-dessous 16 exercices simples en PHP à essayer.
     Que vous soyez débutant ou que vous cherchiez à vous perfectionner en PHP, ces exercices peuvent vous aider
     à améliorer vos compétences dans ce langage de programmation. Je vous encourage à les essayer et à expérimenter
     avec votre propre code pour approfondir vos connaissances en PHP.
@@ -13,17 +15,10 @@ const NUMBER_OF_EXERCISES = 16
 
 <hr>
 <div class="row text-center">
-    <?php for ($i = 1; $i <= NUMBER_OF_EXERCISES; $i++) { ?>
-        <?php if ($i == 1 || $i == 5 || $i == 9 || $i == 13) { ?>
-            <div class="col">
-        <?php } ?>
-        <li class="list-group-item">
-            <a href="#exercice<?= $i ?>" class="small link-secondary text-decoration-none">Exercice <?= $i ?></a>
-        </li>
-        <?php if ($i == 4 || $i == 8 || $i == 12 || $i == NUMBER_OF_EXERCISES) { ?>
-            </div>
-        <?php } ?>
-    <?php } ?>
+    <?php
+        $generateExerciseList = new \Service\GenerateExerciceList();
+        $generateExerciseList->render(1, NUMBER_OF_EXERCISES);
+    ?>
 </div>
 <hr>
 
