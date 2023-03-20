@@ -14,13 +14,43 @@
 </head>
 <body>
 
-    <h1 id="summary" class="h2 text-secondary text-center">Exercices PHP</h1>
-    <a href="../index.php" class="nav-link">Accueil</a>
-    <?php echo $content; ?>
+<h1 id="summary" class="h2 text-secondary text-center">Exercices PHP</h1>
+<a href="../index.php" class="nav-link">
+    <span class="nav-link-span">Accueil</span>
+</a>
+<?php echo $content; ?>
 
-    <a id="backToTop" href="#summary" class="btn btn-sm">
-        <img width="50" src="https://img.icons8.com/ios/512/up-squared.png" alt="Icon chevron carré haut ">
-    </a>
+<a id="backToTop" href="#summary" class="btn btn-sm">
+    <img width="50" src="https://img.icons8.com/ios/512/up-squared.png" alt="Icon chevron carré haut ">
+</a>
 </body>
 <script type="module" src="../assets/js/index.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("runBtn").addEventListener("click", function () {
+            let phpCode = document.getElementById("phpCode").value;
+            fetch("../execute.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "code=" + encodeURIComponent(phpCode)
+            })
+                .then(function (response) {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error("Erreur lors de l'exécution du code PHP.");
+                    }
+                })
+                .then(function (data) {
+                    document.getElementById("result").innerHTML = data;
+                })
+                .catch(function (error) {
+                    document.getElementById("result").innerHTML = error.message;
+                });
+        });
+    });
+
+</script>
 </html>
