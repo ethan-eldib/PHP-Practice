@@ -3,7 +3,8 @@ ob_start();
 include 'exerciceTheme.php';
 require '../Service/GenerateExerciceList.php';
 
-const NUMBER_OF_EXERCISES = 16
+const NUMBER_OF_EXERCISES = 16;
+include "runPhpCode.php";
 ?>
 
 <h2 class="lead m-5">

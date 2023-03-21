@@ -22,12 +22,13 @@ function exercice(int $exerciceNumber, string $statement, string $code): void
 
     $html = '<div class="mx-auto w-50" id="exercice' . $exerciceNumber . '">
                 <h5 class="alert alert-secondary alert alert-secondary">E' . $exerciceNumber . '. ' . $statement . '</h5>
-                <textarea id="phpCode" rows="13" cols="85">&lt;?php</textarea>
                 <br>
-                <button class="btn btn-sm mb-3 btn-primary" id="runBtn">Exécuter</button>
                 <input type="button" id="js-btn-exercice' . $exerciceNumber . '" class="btn btn-sm mb-3 btn-success" value="Voir la réponse ?" />
-                <pre class="bg-dark bg-gradient text-white rounded" id="js-response-exercice' . $exerciceNumber . '"></pre>
-                <p id="result" class="alert alert-secondary">Résultat :
+                <div class="responseContent">
+                    <pre class="bg-dark bg-gradient text-white rounded" id="js-response-exercice' . $exerciceNumber . '"></pre>
+                    <button class="copyToClipboard" id="copyToClipboard' . $exerciceNumber . '" onclick="copyToClipboard('.$exerciceNumber.')">Copier</button>
+                </div>
+                <p class="alert alert-secondary">Résultat :
                     <br>
                     ' . $code . '
                 </p>

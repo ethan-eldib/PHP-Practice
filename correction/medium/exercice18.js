@@ -1,0 +1,1 @@
+export const response18 = `La réponse bientôt :)`;

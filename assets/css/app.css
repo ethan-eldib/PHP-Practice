@@ -73,7 +73,7 @@ a.nav-link {
     background-color: darkred;
 }
 
-.btnExercise a{
+.btnExercise a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -95,7 +95,7 @@ a.nav-link {
 
 #backToTop {
     position: fixed;
-    right: 30px;
+    left: 30px;
     bottom: 25px;
     opacity: 0;
 }
@@ -105,4 +105,53 @@ a.nav-link {
     color: darkorange;
     resize: none;
     font-size: 0.8rem;
+}
+
+.responseContent {
+    position: relative;
+}
+
+.copyToClipboard {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: transparent;
+    padding: 5px;
+    color: darkslategrey;
+    background-color: lightgrey;
+    border-bottom-left-radius: 19px;
+}
+
+.containerPhpCode {
+    background-color: white;
+    position: fixed;
+    z-index: 99999;
+    right: -589px;
+    bottom: -2px;
+    transition: all 0.5s ease-in;
+}
+
+#runBtn {
+    position: absolute;
+    bottom: 81px;
+    border: transparent;
+    right: 1px;
+}
+
+#runBtn img {
+    width: 20px;
+}
+
+.sidebarToggle {
+    transform: translateX(-622px);
+}
+
+#sidebar {
+    position: absolute;
+    left: -71px;
+}
+
+#sidebar img {
+    width: 57px;
 }

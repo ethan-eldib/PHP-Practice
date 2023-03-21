@@ -5,4 +5,5 @@ export const response1 = `
     }
 
     // Appel de la fonction
-    displayDateTime()`;
+    echo displayDateTime();
+`;

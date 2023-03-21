@@ -27,6 +27,7 @@ const NUMBER_OF_EXERCICES = 16;
 const show = function (exerciceNumber) {
     const btnExercice = document.getElementById(`js-btn-exercice${exerciceNumber}`);
     const responseExercice = document.getElementById(`js-response-exercice${exerciceNumber}`);
+    const btnCopyToClipboard = document.getElementById(`copyToClipboard${exerciceNumber}`);
     let confirmed = false;
 
     btnExercice.addEventListener('click', () => {
@@ -95,10 +96,12 @@ const show = function (exerciceNumber) {
                 }
                 btnExercice.value = "Masquer la réponse";
                 btnExercice.classList.add('btn-dark');
+                btnCopyToClipboard.style.display = "block";
             } else {
                 responseExercice.innerHTML = "";
                 btnExercice.value = "Voir la réponse ?";
                 btnExercice.classList.remove('btn-dark');
+                btnCopyToClipboard.style.display = "none";
             }
         }
     })
