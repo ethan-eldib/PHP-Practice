@@ -24,7 +24,6 @@
     <img width="50" src="https://img.icons8.com/ios/512/up-squared.png" alt="Icon chevron carré haut ">
 </a>
 </body>
-<script type="module" src="../assets/js/displayResponseEasyExercise.js"></script>
-<script type="module" src="../assets/js/displayResponseMediumExercise.js"></script>
+<script type="module" src="../assets/js/displayResponse.js"></script>
 <script type="text/javascript" src="../assets/js/sidebar.js"></script>
 </html>

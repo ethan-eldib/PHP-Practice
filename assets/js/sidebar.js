@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/**
+ * Fonction pour copier le texte d'un élément spécifique dans le presse-papiers.
+ *
+ * @param {number} exerciceNumber - Numéro de l'exercice dont le texte doit être copié.
+ * @returns {void}
+ */
 function copyToClipboard(exerciceNumber) {
     const textElement = document.getElementById('js-response-exercice' + exerciceNumber);
     const range = document.createRange();
@@ -32,6 +38,11 @@ function copyToClipboard(exerciceNumber) {
     window.getSelection().addRange(range);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
+
+    const btnCopyToClipboard = document.getElementById(`copyToClipboard${exerciceNumber}`);
+    btnCopyToClipboard.innerText = "Copié !";
+    btnCopyToClipboard.style.color = "mediumspringgreen";
+    btnCopyToClipboard.style.backgroundColor = "darkslategrey";
 }
 
 const btnSidebarElt = document.getElementById("sidebar");
