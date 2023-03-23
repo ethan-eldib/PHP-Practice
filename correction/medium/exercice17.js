@@ -5,11 +5,11 @@ export const response17 = `
         private string $prenom;
         private string $age;
 
-        public function __construct($nom, $prenom, $age)
+        public function __construct(string $nom, string $prenom, string $age)
         {
-            $this->nom = $nom;
-            $this->prenom = $prenom;
-            $this->age = $age;
+            $this->nom      = $nom;
+            $this->prenom   = $prenom;
+            $this->age      = $age;
         }
 
         /**

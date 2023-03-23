@@ -39,7 +39,7 @@ include "runPhpCode.php";
     <section class="mt-5">
         <hr>
         <?php
-        // Votre fonction ici
+        // Votre classe ici
 
         exercice(18,
             "Créez une classe 'CompteBancaire' avec des propriétés 'titulaire' (de type Personne), 'solde' et 'devise'. Ajoutez des méthodes pour effectuer des dépôts, des retraits et afficher le solde actuel.",
