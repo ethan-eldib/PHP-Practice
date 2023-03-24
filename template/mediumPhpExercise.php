@@ -52,10 +52,9 @@ include "runPhpCode.php";
         <hr>
         <?php
         // Votre fonction ici
-
         exercice(19, "Créez une classe 'Voiture' avec des propriétés 'marque', 'modèle', 'année' et 'kilométrage'. Ajoutez une méthode pour calculer l'âge de la voiture et une autre pour augmenter le kilométrage.",
             // Appel de votre fonction ici (sans le point-virgule à la fin)
-            "Affichage du résultat de l'appel de votre fonction"
+            "Affichage du résultat"
         )
         ?>
     </section>
